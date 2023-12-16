@@ -152,28 +152,27 @@
 
 
         function ans() {
+            
+            let result = 0; // Use a different variable name
+
             second = document.getElementById('display').value;
 
-            if (operator=='+')
-            {
-                ans = +first + +second;
-                document.getElementById('display').value = ans;
+            if (operator == '+') {
+                result = +first + +second;
             }
-            if (operator=='-')
-            {
-                ans = +first - +second;
-                document.getElementById('display').value = ans;
+    
+            if (operator == '-') {
+                result = +first - +second;
             }
-            if (operator=='*')
-            {
-                ans = +first * +second;
-                document.getElementById('display').value = ans;
+    
+            if (operator == '*') {
+                result = +first * +second;
             }
-            if (operator=='/')
-            {
-                ans = +first / +second;
-                document.getElementById('display').value = ans;
+            if (operator == '/') {
+                result = +first / +second;
             }
+
+            document.getElementById('display').value = result;
             flg = 0;
         }
 
