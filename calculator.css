@@ -1,4 +1,76 @@
-*{
-  margin: 0;
-  box-sizing: border-box;
-}
+ body {
+            margin: 0;
+            padding: 0;
+            background-color: #d6d6d6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: url(background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+         .calculator-card {
+            background-color: #ffffff14;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            padding: 20px 10px 20px 10px;
+            text-align: center;
+            justify-content: center;
+            .row1{
+                padding-top: 10px;
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        button{
+            background-color: none;
+            border: none;
+            font-weight: bold;
+            color: white;
+            font-size: 16px;
+        }
+        .symbols{
+            background-color: orange;
+        }
+        .button{
+            background-color: gray;
+        }
+        .symbols,
+        .button{
+            padding: 10px;
+            width: 40px;
+            margin: 2px;
+            border-radius: 5px;
+        }
+        .symbols:hover,
+        .button:hover,
+        .btn:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        .btn{
+            width: 85px;
+            height: 30px;
+            margin: 2px;
+            border-radius: 5px;
+            background-color: gray;
+        }
+        input{
+            padding: 10px;
+            outline: 0;
+            border-radius: 25px;
+            border: rgb(157, 157, 157) solid 2px;
+            background: transparent;
+            color: white;
+            text-align: right;
+        }
+        input:focus{
+            border: rgb(192, 192, 192) solid 2px;
+        }
